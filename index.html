@@ -1,0 +1,34 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Carpooling Cost Calculator - Vehicle Setup</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Vehicle Configuration</h1>
+        <form id="vehicleForm">
+            <label for="fuelConsumption">Fuel Consumption (L/100km):</label>
+            <input type="number" id="fuelConsumption" step="0.01" required>
+
+            <label for="fuelCost">Fuel Cost ($/L):</label>
+            <input type="number" id="fuelCost" step="0.01" required>
+
+            <label for="maintenanceCost">Annual Maintenance Cost ($):</label>
+            <input type="number" id="maintenanceCost" step="0.01" required>
+
+            <label for="depreciation">Annual Depreciation ($):</label>
+            <input type="number" id="depreciation" step="0.01" required>
+
+            <label for="annualMileage">Annual Mileage (km):</label>
+            <input type="number" id="annualMileage" required>
+
+            <button type="button" id="toTripView">Next: Define Trip</button>
+        </form>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

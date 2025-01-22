@@ -1,0 +1,32 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Carpooling Cost Calculator - Trip Definition</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Define Your Trip</h1>
+        <form id="tripForm">
+            <div id="stepsContainer">
+                <div class="step">
+                    <h2>Step 1</h2>
+                    <label for="distance1">Distance (km):</label>
+                    <input type="number" id="distance1" name="distance" required>
+                    <label for="passengers1">Passengers:</label>
+                    <input type="number" id="passengers1" name="passengers" required>
+                </div>
+            </div>
+            <button type="button" id="addStep">Add Step</button>
+            <label for="fixedCost">Fixed costs (e.g., parking) ($):</label>
+            <input type="number" id="fixedCost" step="0.01" required>
+            <button type="submit">Calculate</button>
+        </form>
+        <div id="results"></div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
